@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "85953430453",
+    "project_id": "roplabda-1f044",
+    "storage_bucket": "roplabda-1f044.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85953430453:android:b3b8ebcb76e51c3ae48ffc",
+        "android_client_info": {
+          "package_name": "com.example.roplabdabajnoksag"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLiTxH_YcfXIeu86eqRWnZPHYLyw4F4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

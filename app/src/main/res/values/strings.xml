@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RoplabdaBajnoksag</string>
+    <string name="registerStr">Regisztráció</string>
+    <string name="loginStr">Bejelentkezés</string>
+    <string name="JelszoStr">Jelszó</string>
+    <string name="EmailStr">Email</string>
+    <string name="FelhasznaloNevStr">Felhasználó név</string>
+    <string name="megseStr">Mégse</string>
+</resources>
