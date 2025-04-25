@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         String UserName = UserNameET.getText().toString().trim();
         String Password = PasswordET.getText().toString().trim();
-        Log.d(TAG, UserName + " " + Password);
         fauth.signInWithEmailAndPassword(UserName,Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
