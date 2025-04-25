@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        UserNameET = findViewById(R.id.editText2);
-        PasswordET = findViewById(R.id.editText);
+        UserNameET = findViewById(R.id.editText);
+        PasswordET = findViewById(R.id.editText2);
 
         fauth = FirebaseAuth.getInstance();
     }
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
 
 
-        String UserName = UserNameET.getText().toString();
-        String Password = PasswordET.getText().toString();
-
+        String UserName = UserNameET.getText().toString().trim();
+        String Password = PasswordET.getText().toString().trim();
+        Log.d(TAG, UserName + " " + Password);
         fauth.signInWithEmailAndPassword(UserName,Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
