@@ -20,6 +20,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
+    //elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
     private static final String TAG = RegisterActivity.class.getName();
     private static final int SECRET_KEY = 19;
 
@@ -79,7 +84,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void Atiranyitas(){
-        Intent intent = new Intent(this, TournamentsActivity.class);
+        Intent intent = new Intent(this, MatchListActivity.class);
         startActivity(intent);
     }
 

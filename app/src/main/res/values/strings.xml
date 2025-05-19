@@ -6,4 +6,55 @@
     <string name="EmailStr">Email</string>
     <string name="FelhasznaloNevStr">Felhasználó név</string>
     <string name="megseStr">Mégse</string>
+    <string name="buy_ticket">Jegy vásárlása</string>
+    <string name="Meccs_placeholder">Meccs placeholder</string>
+    <string name="meccs_ido_placeholder">Meccs idő placeholder</string>
+    <string name="kereses">Keresés</string>
+    <string name="kocsi">Bevásárlókocsi</string>
+    <string name="view">Nézet</string>
+    <string name="settings">Beállítások</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="openCamera">Kamera megnyitása</string>
+    <string name="junematches">Júniusi Meccsek</string>
+    <string name="allmatches">Összes meccs</string>
+
+    <string-array name="match_item_names">
+        <item>Japán-Amerikai Egyesült Államok</item>
+        <item>Amerikai Egyesült Államok-Lengyelország</item>
+        <item>Amerikai Egyesült Államok-Olaszország</item>
+        <item>Amerikai Egyesült Államok-Szlovénia</item>
+        <item>Argentína-Brazília</item>
+        <item>Franciaország-Olaszország</item>
+        <item>Japán-Lengyelország</item>
+    </string-array>
+
+    <string-array name="match_item_desc">
+        <item>Május</item>
+        <item>Június</item>
+        <item>Június</item>
+        <item>Július</item>
+        <item>Július</item>
+        <item>Augusztus</item>
+        <item>Augusztus</item>
+    </string-array>
+
+    <array name="match_images">
+        <item>@drawable/japanamerika</item>
+        <item>@drawable/amerikalenygel</item>
+        <item>@drawable/amerikaolasz</item>
+        <item>@drawable/amerikaszlovenia</item>
+        <item>@drawable/argentinabrazil</item>
+        <item>@drawable/franciaolasz</item>
+        <item>@drawable/japanlengyel</item>
+    </array>
+
+    <array name="match_prices">
+        <item>7700 RP</item>
+        <item>9950 RP</item>
+        <item>8200 RP</item>
+        <item>9500 RP</item>
+        <item>11300 RP</item>
+        <item>8800 RP</item>
+        <item>10500 RP</item>
+    </array>
 </resources>

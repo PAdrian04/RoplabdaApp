@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,6 +24,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
+    //elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
+//elpocsékoltam 12 órát arra hogy működjön a kilistázás, de tovább már nem bírom. Feladtam...
     private static final String TAG = MainActivity.class.getName();
     private static final int SECRET_KEY = 19;
     EditText UserNameET;
@@ -28,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth fauth;
 
+    Button loginButton;
+    Button registerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Atiranyitas(){
-        Intent intent = new Intent(this, TournamentsActivity.class);
+        Intent intent = new Intent(this, MatchListActivity.class);
         startActivity(intent);
     }
 
@@ -75,5 +85,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegisterActivity.class);
         intent.putExtra("SECRET_KEY", 19);
         startActivity(intent);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume");
+        Toast.makeText(this, "Üdvözlünk az alkalmazásban!", Toast.LENGTH_LONG).show();
+        loginButton = findViewById(R.id.button2);
+        registerButton = findViewById(R.id.button);
+
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+
+        loginButton.startAnimation(animation);
+        animation = AnimationUtils.loadAnimation(this,R.anim.slide_in_row);
+
+        registerButton.startAnimation(animation);
     }
 }

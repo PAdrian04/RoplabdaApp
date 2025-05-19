@@ -13,7 +13,7 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
+        multiDexEnabled = true;
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -42,6 +42,7 @@ dependencies {
     implementation("androidx.credentials:credentials-play-services-auth:1.5.0")
     implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
     implementation("com.google.firebase:firebase-firestore:25.1.3")
+    implementation("com.android.support:multidex:1.0.3")
     implementation(libs.activity)
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
@@ -49,4 +50,9 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("com.google.android.gms:play-services-auth:20.7.0")
     implementation("com.google.android.material:material:1.6.0")
+
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
+    implementation("com.github.bumptech.glide:glide:3.7.0")
+    implementation("androidx.cardview:cardview:1.0.0")
 }
